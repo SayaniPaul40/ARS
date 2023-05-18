@@ -1,0 +1,329 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Tabs Design | CodingNepal</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="GMR FRONREND/gmr_prerequisite/css/style.css">
+    <link rel="import" href="new_data_popup.html">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/table-to-json@1.0.0/lib/jquery.tabletojson.min.js"
+      integrity="sha256-H8xrCe0tZFi/C2CgxkmiGksqVaxhW0PFcUKZJZo1yNU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <!-- <header>Pure CSS Tabs</header> -->
+    <input type="radio" name="slider" checked id="home">
+    <input type="radio" name="slider" id="blog">
+    <input type="radio" name="slider" id="code">
+    <input type="radio" name="slider" id="help">
+    <input type="radio" name="slider" id="about">
+    <nav>
+      <label for="home" class="home">Advanced Resume Screner(ARS)</label>
+      <label for="blog" class="blog">Finalize Your Taxonomy </label>
+      <label for="code" class="code">Get Scores Against Resumes</label>
+      <!-- <label for="help" class="help"><i class="far fa-envelope"></i>Help</label>
+      <label for="about" class="about"><i class="far fa-user"></i>About</label> -->
+      <div class="slider"></div>
+    </nav>
+    <section>
+      <div class="content content-1">
+        <div class="title">Welcome User!</div>
+        <div class="para">
+            This is an advanced screening tool built for shortlisting profiles against your firm’s Job Roles.
+            <br><br>
+            Using this tool, you can – 
+            <br>
+            1. Parse, extract and edit relevant skills, educational qualifications, years of experience from the Job Descriptions.
+            <br><br> 2. Fetch Resumes from Firm’s Email Address and Naukri Database and shortlist relevant profiles based on scores received against the JDs.
+        </div>
+        <div class="mflex-item part2">
+
+
+          <img src="GMR FRONREND/gmr_prerequisite/image/cv_3.jpg" alt="" height="500"
+            width="500" style="margin-left: 700px; position: absolute; top: 180px;">
+
+        </div>
+       
+      </div>
+      <div class="content content-2">
+        <div class="scroll">
+        <!-- <div class="title2">This is a Blog content</div> -->
+        <p><br><br>In this section, you can create a new JD by choosing the option ‘Create New JD’ and put relevant information and then click ‘Create JD’ button. 
+         <br> If you want to parse your existing JDs, you can click the button ‘Parse Existing JDs’.
+          </p>
+          <button id="openButton" style="background-color: #ff8c00; color: #fff;border-radius: 5px;">Create New JD</button>
+          <div id="inputBoxContainer" style="display: none;">
+            <div class="container">
+              <!-- <form action="/action_page.php"> -->
+                <div class="row">
+                  <div class="col-25">
+                    <label for="jobRole">Job Role:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="jobRole" placeholder="Enter job role">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="minExp">Minimum Experience:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="minExp" placeholder="Enter min experience">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="maxExp">Maximum Experience:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="maxExp" placeholder="Enter max experience">
+                  </div>
+                </div>
+            
+                <div class="row">
+                  <div class="col-25">
+                    <label for="location">Location:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="location" placeholder="Enter Location">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="minCTC">Maximum CTC:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="minCTC" placeholder="Enter max CTC">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="maxCTC">Maximum CTC:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="maxCTC" placeholder="Enter max CTC">
+                  </div>
+                </div>
+            
+                <div class="row">
+                  <div class="col-25">
+                    <label for="description">Description in Detail</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="description" placeholder="Write Description.." style="height:120px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <button id="saveButton" type="submit" style="background-color: #4caf50; color: #fff;">Save</button>
+                </div>
+              
+            </div>
+          </div>
+          <!-- <br><br> -->
+          <!-- ........... -->
+          <section class="mflex-container">
+            <div class="mflex-item part1">
+    
+              <!--set font size for below p -->
+              <!-- <p style="font-size: 3rem; margin-left: 50px; margin-top: 50px;">
+                <span class="txt1"><b>Skill Set</b></span><br> <b>Amendment</b>
+                <span class="txt2"><b> Portal.</b></span>
+              </p><br>
+              <p style=" margin-left: 50px;">
+                UI to upload your skills for different job roles and
+                update them as per your requirement.
+              </p> -->
+    
+              <form enctype="multipart/form-data">
+                <div class="file-wrapper">
+                  <div class="upload-btn-wrapper">
+                    <button class="btn upload-file font-weight-500">
+                      <span class="upload-btn">
+                        <i class="fas fa-cloud-upload-alt d-block font-50 pb-2"></i>
+                        Browse Files here
+                      </span>
+                      <span class="upload-select-button" id="blankFile">
+                        Supports .CSV and .XLSX
+                      </span>
+                      <span class="success">
+                        <i class="far fa-check-circle text-success"></i>
+                      </span>
+                    </button>
+                    <input type="file" name="files[]" id="upload">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- <div class="mflex-item part2">
+    
+    
+              <img src="\gmr_prerequisite\image\cv_3.jpg" alt="" height="600"
+                width="600" style="margin-left: 20px;">
+    
+            </div> -->
+    
+          </section>
+    
+    
+          <div id="mpopupBox" class="mpopup">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close" onclick="dissmissDialog()">×</span>
+              </div>
+              <!-- <input type="text" name="" id="myInput" placeholder="Search Here" onkeyup="searchFun()"> -->
+              <div class="modal-body">
+    
+    
+                <form>
+                  <div class="col">
+                    <label for="fname">JD_ID</label>
+                    <select type="text" id="jd_id" name="jd_id" placeholder="JD_ID" >
+                  
+                      <option>DOPSE001</option>
+                      <option>DS001</option>
+                    
+                    </select>
+    
+                    <label for="lname">Job Role</label>
+                    <select type="text" id="job_role" name="job_role" placeholder="Job Role">
+                      <option>DevOps Engineer</option>
+                      <option>Data Scientist</option>
+                    </select>
+                    <label for="fname">Source</label>
+                    <select type="text" id="source" name="source" placeholder="Source" >
+                      <option selected>UI</option>
+                    </select>
+                    
+    
+                    <label for="lname">Min Exp (years)</label>
+                    <input type="number" id="min_exp" name="min_exp" placeholder="Min Exp" min="0" max="70" maxlength="2" >
+    
+                  </div>
+    
+                  <div class="col">
+    
+                    <label for="max_exp">Max Exp (years)</label>
+                    <input type="number" id="max_exp" name="max_exp" placeholder="Max Exp" min="0" max="70" maxlength="2">
+    
+                    <lebel for="priority">Priority</lebel>
+                    <select type="text" id="priority" name="priority" placeholder="Priority">
+                      <option>High</option>
+                      <option>Low</option>
+                    </select>  
+    
+                    <label for="category">Category</label>
+                    <select type="text" id="category" name="category" placeholder="Category">
+                      <option>Skill</option>
+                      <option>Education</option>
+                    </select>  
+    
+                    <label for="keywords">Keywords</label>
+                    <input type="text" id="keywords" name="keywords" placeholder="Keyword">
+    
+                  </div>
+    
+                </form>
+    
+              </div>
+    
+              <div class="modal-footer">
+                <button type="button" id="addButton" onclick="addRow()" class="btn btn-primary">Save changes</button>
+                <button type="button" id="updateButton" onclick="updateRow()" class="btn btn-primary">Update
+                  changes</button>
+              </div>
+            </div>
+          </div>
+    
+          <section class="mSection">
+    
+            <div id="table_container">
+              <div class="wrap">
+    
+                <div class="search">
+    
+                  <input type="text" name="" id="myInput" placeholder="Search Here" onkeyup="searchFun()"
+                    style="float: left; margin-bottom: 10px;">
+                  <button  class="searchButton">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <table class="table table-bordered" id="table">
+    
+                <!--Code for popup dialog-->
+              </table>
+            </div>
+          </section>
+    
+    
+          <!-- <footer style="background-color: rgb(78, 79, 80); padding: 4px;">
+            <img src="gmr_prerequisite\image\Group635.png"
+              style="margin-left: 20px; padding: 0.5rem;">
+            <hr style="background-color: azure; margin-left: 20px; margin-right: 20px;">
+            <p style="margin-left: 20px; margin-top: 5px; color: white;">© 2023 | Powered by Protiviti India Member Private
+              limited..</p>
+          </footer> -->
+    
+    
+          <button id="btnExport">Save</button>
+
+          <!-- ........ -->
+            
+      </div>
+      </div>
+      <div class="content content-3">
+        <div class="title3">This is a Code content</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, debitis nesciunt! Consectetur officiis, libero nobis dolorem pariatur quisquam temporibus. Labore quaerat neque facere itaque laudantium odit veniam consectetur numquam delectus aspernatur, perferendis repellat illo sequi excepturi quos ipsam aliquid est consequuntur.</p>
+      </div>
+      <div class="content content-4">
+        <div class="title">This is a Help content</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim reprehenderit null itaq, odio repellat asperiores vel voluptatem magnam praesentium, eveniet iure ab facere officiis. Quod sequi vel, rem quam provident soluta nihil, eos. Illo oditu omnis cumque praesentium voluptate maxime voluptatibus facilis nulla ipsam quidem mollitia! Veniam, fuga, possimus. Commodi, fugiat aut ut quorioms stu necessitatibus, cumque laborum rem provident tenetur.</p>
+      </div>
+      <div class="content content-5">
+        <div class="title">This is a About content</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur officia sequi aliquam. Voluptatem distinctio nemo culpa veritatis nostrum fugit rem adipisci ea ipsam, non veniam ut aspernatur aperiam assumenda quis esse soluta vitae, placeat quasi. Iste dolorum asperiores hic impedit nesciunt atqu, officia magnam commodi iusto aliquid eaque, libero.</p>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="test2.js"></script>
+  <script src="path/to/exceljs.min.js"></script>
+
+  <!-- ........... -->
+  <!--embed sccript.js inside script tag-->
+  <script src="GMR FRONREND/gmr_prerequisite/js/script.js" type="text/javascript"></script>
+  <script src="GMR FRONREND/gmr_prerequisite/js/script_popup.js" type="text/javascript"></script>
+  <script src="GMR FRONREND/gmr_prerequisite/js/export_excel.js" type="text/javascript"></script>
+  <script>
+    document.getElementById("min_exp").addEventListener("input", function () {
+      this.value = this.value.slice(0, 2);
+      
+    })
+    document.getElementById("max_exp").addEventListener("input", function () {
+      this.value = this.value.slice(0, 2);
+    })
+  </script>
+</body>
+</html>
