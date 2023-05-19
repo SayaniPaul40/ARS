@@ -1,0 +1,70 @@
+JD_ID,Job Role,Source,Min_Exp,Max_Exp,Priority,Category,Keywords
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Microsoft Solutions Framework
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Data Storage Technologies
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Financial Data Analysis
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Minimum Data Set
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Data Management
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Functional Independence Measure (FIM)
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Regulatory Requirements
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Credit Management
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Source Data
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Business Requirements
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Self-Motivation
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Python (Programming Language)
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Banking
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Reference Data
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Digital Data Systems
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Data Mart
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Extract Transform Load (ETL)
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Data Analysis
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Data Governance
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Big Data
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Financial Services
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Research
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Certified Analytics Professional
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Programming (Music)
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Key Risk Indicator
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Market Risk
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Data Manipulation
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Data Modeling
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Operations
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Professionalism
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,SQL (Programming Language)
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Cleaned Data
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Credit Risk
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Verbal Communication Skills
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,DevOps
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Functional Requirement
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Credit Card Applications
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Management Effectiveness
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Economics
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Business Support Systems
+DOPSE001,DevOps Engineer,Python,4,6,high,Skill,Data Quality
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Lending Products
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,SAS (Software)
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Team Oriented
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Modelling Skills
+DOPSE001,DevOps Engineer,Python,4,6,low,Skill,Cross-Functional Team Leadership
+DOPSE001,DevOps Engineer,Python,4,6,low,Educational Qualfication,Bachelor
+DOPSE001,DevOps Engineer,Python,4,6,low,Educational Qualfication,University
+DS001,Data Scientist,Python,6,8,high,Skill,Electronic Design Automation (EDA) Software
+DS001,Data Scientist,Python,6,8,high,Skill,Problem Solving
+DS001,Data Scientist,Python,6,8,high,Skill,Data Science
+DS001,Data Scientist,Python,6,8,high,Skill,Business Acumen
+DS001,Data Scientist,Python,6,8,high,Skill,Model-Driven Development
+DS001,Data Scientist,Python,6,8,high,Skill,Analytics
+DS001,Data Scientist,Python,6,8,high,Skill,Business Requirements
+DS001,Data Scientist,Python,6,8,high,Skill,QlikView (Data Analytics Software)
+DS001,Data Scientist,Python,6,8,high,Skill,Python (Programming Language)
+DS001,Data Scientist,Python,6,8,high,Skill,Financial Services
+DS001,Data Scientist,Python,6,8,high,Skill,Analytical Skills
+DS001,Data Scientist,Python,6,8,high,Skill,Management
+DS001,Data Scientist,Python,6,8,high,Skill,Statistical Modeling
+DS001,Data Scientist,Python,6,8,high,Skill,Design Management
+DS001,Data Scientist,Python,6,8,low,Skill,Economic Statistics
+DS001,Data Scientist,Python,6,8,low,Skill,Tableau (Business Intelligence Software)
+DS001,Data Scientist,Python,6,8,low,Skill,Visualization
+DS001,Data Scientist,Python,6,8,high,Skill,SAS (Software)
+DS001,Data Scientist,Python,6,8,high,Skill,Job Descriptions
+DS001,Data Scientist,Python,6,8,high,Educational Qualfication,Statistics
+DS001,Data Scientist,Python,6,8,high,Educational Qualfication,Economics
